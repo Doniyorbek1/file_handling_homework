@@ -6,12 +6,13 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    data = f.split()
+    data = f.split(',')
     list1 = []
     for i in data:
         for j in range(len(i)):
-            if not str(i[j]).isdigit():
+            if not str(i[j]).isdigit() or i[j].isspace():
                 list1 = list1 + [i[j]]
+
     return list1
 
    
