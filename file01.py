@@ -11,5 +11,5 @@ def main(data:str):
     data =f.split(',')
     return data
 # Read data from file
-f= open('/home/asus/Python/file_handling_homework/txt_file/data01.txt','r').read()
+f= open('txt_file/data01.txt').read()
 print(main(f))
