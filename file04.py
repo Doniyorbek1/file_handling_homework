@@ -10,7 +10,7 @@ def main(data:str):
     list1 = []
     for i in data:
         for j in range(len(i)):
-            if not str(i[j]).isdigit() or i[j].isspace():
+            if not str(i[j]).isdigit():
                 list1 = list1 + [i[j]]
 
     return list1
